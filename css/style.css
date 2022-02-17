@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+
+body {
+    background-color: antiquewhite;
+    overflow: hidden;
+}
+
+.heading {
+    text-align: center;
+}
+
+.Recipe-heading {
+    color: maroon;
+    font-size: 3 rem;
+    font-family: 'Amatic SC', cursive;
+    position: relative; /*top-right-bottom-left*/
+    animation: recipe-heading;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    /*animation-iteration-count: infinite;*/
+}
+
+@keyframes recipe-heading {
+    0% {top: -250px}
+    100% {top: 10px}
+}
+
+.image {
+    text-align: center;
+    position: relative;
+    animation: aniImage;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes aniImage {
+    0% {right: -1500px;}
+    85% {right: 50px;}
+    100% {right: 0;}
+}
+
+.Cooking-heading {
+    font-size: 1.5rem;
+    color: coral;
+    font-family: 'Passion One', cursive;
+}
+
+.p-heading {
+    color: maroon;
+    opacity: 0;
+    animation: pHeading;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes pHeading {
+    0% {opacity: 0;} /*0 - 1*/
+    100% {opacity: 1;}
+}
+
+.Ingredients-heading {
+    color: coral;
+    font-family: 'Passion One', cursive;
+}
+
+.ul-heading {
+    color: maroon;
+    opacity: 0;
+    animation: ulHeading;
+    animation-duration: 4s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes ulHeading {
+    0% {opacity: 0;} /*0 - 1*/
+    100% {opacity: 1;}
+}
+
+.Method-heading {
+    color: coral;
+    font-family: 'Passion One', cursive;
+}
+
+.ol-heading {
+    color: maroon;
+    opacity: 0;
+    animation: olHeading;
+    animation-duration: 4s;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes olHeading {
+    0% {opacity: 0;} /*0 - 1*/
+    100% {opacity: 1;}
+}
+
+.footer {
+    color: maroon;
+    text-align: center;
+    font-family: 'Passion One', cursive;
+}
